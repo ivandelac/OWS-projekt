@@ -1,0 +1,474 @@
+* {               /* svi elementi */
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Ubuntu', sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+p {
+	font-size: 14px;
+}
+
+.header {
+	background-image: url("../images/header-bg.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;    
+	background-position: 50% 50%;
+	background-size: cover;
+	-moz-background-size: cover;    /* fix za mozila browser */
+	-o-background-size: cover;      /* fix za opera browser */
+	-webkit-background-size: cover;  /* fix za safari,chrome browser */
+}
+.logo img {
+	width:13%;
+	background-color: #18f312;
+	opacity: 0.9;
+}
+
+.header-mobitel img {
+	width: 500px;
+	          /* smanjili smo sliku moba da bude kao parent */
+}
+.header-overlay {
+	background-color: rgba(31,31,31,0.75); 
+}
+.logo {
+	padding-bottom: 50px;
+}
+.header-text h1 {
+	color: #fff;  /* bijela boja */
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 45px;
+    padding-top: 30px;
+    text-transform: uppercase;
+}
+.header-text p {
+	color: #fff;  /* bijela boja */
+	font-size: 17px;
+	line-height: 28px;
+	
+}
+.header-btns {
+	margin-top: 90px;
+	margin-bottom: 50px;
+}
+
+.btn-download,
+.btn-donwload:focus,
+.btn-download:active,
+.btn-donwload:visited
+{
+	color: #A9ADB0;
+	background: transparent;
+	border-color: #18f312;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 19px;
+	text-transform: uppercase;
+	border-radius: 3px;
+    transition: all 1s;
+    -webkit-transition: all 1s; /*fix za safari,chrome */
+    -moz-transition: all 1s; /*fix za mozillu */
+    -o-transition: all 1s; /* fix za operu */
+}
+.btn-download:hover {
+	background-color: #18f312;
+	color: #fff;
+}
+.btn-tour,
+.btn-tour:focus,
+.btn-tour:active,
+.btn-tour:visited {
+	color: #A9ADB0;
+	margin-left: 20px;
+	text-transform: uppercase;
+	font-size: 19px;
+	font-weight: 500;
+	background: transperent;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+}
+.btn-tour:hover {
+	color: #fff;
+}
+.btn-tour i {
+	font-size: 20px;
+	padding-left: 5px;
+	color: #18f312;
+}
+
+/* osnova */
+.osnova-title h2:after {
+	content: "";
+	position: absolute;
+	bottom: -12px;
+	left: 33px;
+	width: 334px;
+	height: 1px;
+	background-color: #18f312;
+}
+.osnova-title p {
+	margin-top: 30px;
+	font-size: 19px;
+	line-height: 24px;
+}
+.osnova-item {
+	position:relative;
+	padding-bottom: 4px;
+	padding-left: 80px;
+
+}
+.osnova-item div {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.osnova-item div i {
+	font-size:55px;
+	color: #18f312;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	-moz-transition: all 1s;
+}
+.osnova-item h3{
+	color: #343434;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 800;
+}
+
+.osnova-title h2 {
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 30px;
+	line-height: 37px;
+	position: relative;
+}
+.osnova-item p {
+	color: #727272;
+	font-size: 15px;
+
+}
+
+.osnova-wraper {
+    padding-top: 50px;
+}
+.about-paleo img {
+	margin-top: 8px;
+	width: 500px;
+}
+/* Generic CSS */
+.section-title {
+	padding-top: 90px;
+	padding-bottom: 50px;
+}
+
+.section-title h2 {
+	position: relative;
+	text-align: center;
+	color: #333;
+	font-size: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.section-title p {
+	color: #333;
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 300;
+	text-align: center;
+	margin-top: 45px;
+}
+.section-title h2:after {
+	content: "";
+	position: absolute;
+	bottom: -20px;
+	left: 37%;
+	width: 300px;
+	height: 1px;
+	background-color: #18f312;
+	margin-left: -30px;
+}
+/* korisnici */
+.korisnici{
+	background-image: url("../images/paleo-jelo.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-position: 50% 50%;
+}
+.korisnici-overlay {
+	background-color: rgba(31,31,31, .75);
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+.carousel-indicators {
+	bottom: -10px;	
+}
+.carousel-inner .item img {
+	border: 2px solid #18f312;
+	border-radius: 50%;
+	padding: 3px;
+}
+.korisnici-caption {
+	padding-bottom: 70px;
+} 
+.korisnici-caption h2 {
+	color: #18f312;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 30px;
+	margin-top: 25px;
+}
+.korisnici-caption h4 {
+	color: #18f312;
+}
+.korisnici-caption h4 span {
+	color: #D8D8D8;
+	font-style: italic;
+	font-weight: 300;
+}
+.korisnici-caption p {
+	color: #D8D8D8;
+	font-size: 18px;
+	line-height: 27px;
+	padding-top: 50px;
+}
+
+/* mobilna aplikacija */
+.features-inner-wrapper {
+
+	padding-top: 30px;
+	padding-bottom: 70px;
+}
+.lijevi-feature-item {
+	position: relative;
+	padding-right: 90px;
+	margin-bottom: 65px;
+	text-align: right;
+	margin-top: 35px;
+}
+.lijevi-feature-item-icon {
+	position: absolute;
+	font-size: 40px;
+	color: #18f312;
+	right: 0;
+	top: -8px;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+}
+.lijevi-feature-item h3 {
+	text-transform: uppercase;
+	font-size: 25px;
+	font-weight: 700;
+	margin-bottom: 21px;
+	color: #333;
+}
+.lijevi-feature-item p {
+	color: #333;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 25px;
+}
+.feature-iphone img {
+	width: 100%;
+}
+.desni-feature-item {
+	position: relative;
+	padding-left: 90px;
+	margin-bottom: 65px;
+	margin-top: 35px;
+    text-align: left;
+}
+.desni-feature-item-icon {
+	position: absolute;
+	left: 0;
+	top: -8px;
+	font-size: 40px;
+	color: #18f312;
+	width: 90px;
+	height: 90px;
+	text-align: center;
+}
+
+.desni-feature-item h3 {
+	text-transform: uppercase;
+	font-size: 25px;
+	font-weight: 700;
+	margin-bottom: 21px;
+    color: #333;
+}
+.desni-feature-item p {
+    color: #333;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+ }
+/* kupite odmah */
+.kupi-odmah {
+	background-color: #1a1a1a;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.kupi-odmah p {
+	color: #dfdfdf;
+	font-size: 18px;
+	font-weight: 300;
+}
+.btn-kupi-odmah,
+.btn-kupi-odmah:active,
+.btn-kupi-odmah:focus,
+.btn-kupi-odmah:visited 
+{
+	background-color: #18f312;
+	border: 1px solid #18f312;
+	color: #fff;
+	border-radius: 3px;
+	padding: 15px 35px;
+	text-transform: uppercase;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+}
+.btn-kupi-odmah:hover {
+	background-color: #127481;
+	border-color: #316890;
+}
+/* kontaktirajte nas */
+
+.kontaktirajte-nas-form .form-control {
+	display: block;
+	width: 100%;
+	height: 50px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 21px;
+	color: #555;
+	background-color: transparent;
+	border: 1px solid #aeaeae;
+	border-radius: 3px;
+	margin-bottom: 15px;
+	opacity: .8;
+	outline: 8px !important; /* DLozic HINT */
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	-webkit-transition: all 1s;
+}
+#poruka {
+	height: 117px;
+	resize: none;
+}
+.potvrdi-btn,
+.potvrdi-btn:active,
+.potvrdi-btn:focus,
+.potvrdi-btn:focus,
+.potvrdi-btn:visited {
+	background-color: transparent;
+	border: 1px solid #18f312;
+	border-radius: 4px;
+	width: 100%;
+	height: 50px;
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #18f312;
+	outline: 8px !important;
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	-webkit-transition: all 1s;
+
+}
+.potvrdi-btn:hover {
+	background: #18f312;
+	color: #fff;
+	border-color: #18f312;
+}
+.social-icons {
+	padding-top: 50px;
+	padding-bottom: 70px;
+}
+.social-icons ul {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.social-icons ul li {
+	list-style: none;
+	display: inline;
+	padding-left: 10px;
+}
+.social-icons ul li a {
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	border: 1px solid #9d9d9d;
+	border-radius: 3px;
+	width: 45px;
+	height: 45px;
+	line-height: 49px;
+	color: #9d9d9d;
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	-webkit-transition: all 1s;
+
+}
+.social-icons ul li a:hover {
+	background-color: #18f312;
+	border: 1px solid #18f312;
+	color: #fff;
+}
+.social-icons ul li a i {
+	font-size: 20px;  /*velicina social ikona */
+}
+
+/* footer */
+.footer {
+	background-color: #1a1a1a;
+	padding-bottom: 35px;
+	padding-top: 35px;
+	border-bottom:3px solid #18f312;
+}
+#copyright {
+	width: 50%;
+}
+#copyright p {
+	color: #8C8BBA;
+	font-weight: 600;
+	font-size: 15px;
+	text-transform: uppercase;
+
+}
+#copyright p a {
+	text-decoration: none;
+	color: #18f312;
+}
+.scroll-top {
+	text-align: right;
+}
+.scroll-top a {
+	background-color: #18f312;
+	padding: 25px;
+}
+.scroll-top a i {
+	color: #fff;
+	font-size: 25px;
+}
+.Error {
+	color: red;
+    font-size: 15px;
+}
